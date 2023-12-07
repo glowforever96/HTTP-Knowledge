@@ -73,5 +73,15 @@
   * 클라이언트가 리소스의 URI를 알고 관리
   * 여기서 스토어는 /files
 
+* 대부분 POST로 신규 자원 등록 (컬렉션 기반) 사용
+
+### HTML FORM 사용
+* HTML FORM은 GET, POST만 지원
+* Ajax 같은 기술을 사용해 해결 가능 -> API
+* 컨트롤 URI
+  * GET, POST만 지원하므로 제약이 있음
+  * 이런 제약을 해결하기 위해 동사로 된 리소스 경로 사용
+  * POST의 /new, /edit, /delete..가 컨트롤 URI
+
 
 
