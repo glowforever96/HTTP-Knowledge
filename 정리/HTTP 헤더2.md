@@ -67,4 +67,17 @@
 
 ## 캐시 무효화
 확실한 캐시 무효화 응답이 있음
-* Cahche
+* Cache-Control: no-cache, no-store, must-revalidate
+* Pragma: no-cache (HTTP 1.0 하위 호환)
+
+### no-cache
+* 데이터는 캐시해도 되지만 항상 원 서버에 검증하고 사용
+
+### no-store
+* 데이터에 민감한 정보가 있으므로 저장하면 안됨
+
+### must-revalidate
+* 캐시 만료후 최초 조회시 원 서버에 검증해야 함
+* 원 서버 접근 실패시 반드시 오류가 발생해야함 - 504
+* 캐시 유효 시간이라면 캐시를 사용
+
